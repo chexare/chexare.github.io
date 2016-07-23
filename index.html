@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-<script type="text/javascript">
-$( document ).ready(function() {
-	var x = document.getElementById("demo");
-
-	function getLocation() {
-	    if (navigator.geolocation) {
-	        navigator.geolocation.getCurrentPosition(showPosition);
-	        window.location = "http://www.pokevision.com/#/@"+ position.coords.latitude +","+ position.coords.longitude;
-	    } else {
-	        x.innerHTML = "Geolocation is not supported by this browser.";
-	    }
-	}
-	getLocation();
-});
-
-</script>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 </head>
 <body>
+
+<p>The awesome botton below will tell me where you are MUA HA HA HA HA</p>
+
+<button onclick="getLocation()">Try It</button>
+<button onclick="go_to_web()">Take Me There</button>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+function go_to_web(position) {
+    window.location = "http://www.pokevision.com/#/@"+ position.coords.latitude +","+ position.coords.longitude;
+}
+
+</script>
+
 </body>
 </html>
