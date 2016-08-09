@@ -1720,6 +1720,10 @@
     	vertical-align: middle;
     	padding: 65px 0px 0px 0px;
     }
+    .home_splash{
+    	vertical-align: middle;
+    	padding: 65px 0px 0px 0px;
+    }
     .home_splash_message{
 	    background: rgba(0,0,0,0.7);
 	    font-size: 25px;
@@ -1727,13 +1731,28 @@
 	    color: #fff;
     }
     .dark_font{
-    	color:#555;
+    	color:#888;
     	text-align: left;
+    	font-weight: 100;
     }
     .dark_serif_font{
-    	color:#555;
+    	color:#888;
     	text-align: left;
     	font-family: calluna;
+    	font-weight: 100;
+    }
+    .dark_serif_font > li{
+    	list-style: initial;
+    	list-style-position: inside;
+    }
+    .dark_font_centered{
+    	color:#888;
+    	text-align: center;
+    	font-weight: 100;
+    }
+    .advisor{
+    	padding: 45px 15px 90px;
+    	border-bottom: 1px solid #eee;
     }
 
 /* Form */
