@@ -1726,6 +1726,14 @@
 		margin-bottom: 10.5px;
 		height: 30px;
 	}
+	#logo:hover > a {
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		background: rgba(188, 202, 206, 0.15);
+		border: solid 1px;
+	}
 	.home_splash{
 		display: table-cell;
     	vertical-align: middle;
