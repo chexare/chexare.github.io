@@ -1715,6 +1715,7 @@
 
 /* CUSTOM CSS CG */
 	#logo{
+	    margin: 7px;
 	}
 	#logo a {
 		border: solid 1px transparent;
@@ -1723,8 +1724,7 @@
 		line-height: 1em;
 		padding: 6px;
 		text-decoration: none;
-		height: 30px;
-		font-size: 16px;
+		font-size: 18px;
 	}
 	#logo a:hover  {
 		-moz-transition: all 0.2s ease-in-out;
@@ -2249,7 +2249,7 @@
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
-		font-size: 0.8em;
+		font-size: 014px;
 		left: 0;
 		padding: 1em 1.5em;
 		position: fixed;
@@ -2347,7 +2347,7 @@
 			background: #212f2e;
 			box-shadow: none;
 			color: #fff;
-			padding: 1em 2.5em;
+			height: 75px;
 			position: absolute;
 		}
 
