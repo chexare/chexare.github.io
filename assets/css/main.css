@@ -1714,7 +1714,10 @@
 	}
 
 /* CUSTOM CSS CG */
-
+	.float_left{
+		position: relative;
+		float: left;
+	}
 	.home_splash{
 		display: table-cell;
     	vertical-align: middle;
