@@ -16,7 +16,6 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		background:#212f2e;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -58,7 +57,10 @@
 	}
 
 /* Containers */
-
+	
+	html{
+		background:#212f2e;
+	}
 	.container {
 		margin-left: auto;
 		margin-right: auto;
