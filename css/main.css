@@ -2716,6 +2716,9 @@
 			}
 
 		/* Section/Article */
+			#header {
+				font-size: 12px;
+			}
 
 			header br {
 				display: none;
