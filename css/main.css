@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		background:#212f2e;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2249,7 +2250,7 @@
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
-		font-size: 014px;
+		font-size: 14px;
 		left: 0;
 		padding: 1em 1.5em;
 		position: fixed;
@@ -2720,6 +2721,10 @@
 				font-size: 12px;
 			}
 
+			#footer .copyright {
+				font-size: 12px;
+			}
+
 			header br {
 				display: none;
 			}
@@ -3113,6 +3118,12 @@
 				text-align: center;
 			}
 
+			.home_splash_message{
+			    background: rgba(0,0,0,0.7);
+			    font-size: 16px;
+			    padding: 35px;
+			    color: #fff;
+		    }
 				header.major {
 					padding-bottom: 0;
 				}
