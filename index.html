@@ -18,14 +18,19 @@
 		<script src="js/util.js"></script>
 		<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#header').load('header.html');
+			});
+		</script>
 	</head>
 	<body class="index">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<div id="header" class="alt">
+				<header id="header" class="alt">
 					
-				</div>
+				</header>
 
 			<!-- Banner -->
 				<section id="banner">
@@ -53,9 +58,4 @@
 
 		</div>
 	</body>
-	<script type="text/javascript">
-			$(document).ready(function(){
-			    $('#header').load('header.html');
-			});
-		</script>
 </html>
