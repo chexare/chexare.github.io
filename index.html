@@ -11,21 +11,6 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!-- Scripts -->
 		<script src="js/jquery.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-			    $('#header').load('header.html',function(){
-			    	var upper_nav_links = [];
-			    	var upper_nav_links = $(".main_nav_opt");
-			    	for (var i = 0; i < upper_nav_links.length; i++) {
-	                    var file = upper_nav_links[i];
-	                    $("#navPanel").children("nav").append('<a class="link depth-0" href="'+file.getAttribute("href")+'" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">'+file.innerHTML+'</a>');
-	                };
-			    });
-			    
-			});
-			
-
-		</script>
 	</head>
 	<body class="index">
 		<div id="page-wrapper">
@@ -60,13 +45,5 @@
 				</footer>
 
 		</div>
-
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollgress.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/util.js"></script>
-		<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-		<script src="js/main.js"></script>
 	</body>
 </html>
