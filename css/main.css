@@ -1774,6 +1774,10 @@
     	font-family: calluna;
     	font-weight: 100;
     }
+    .dark_serif_font ol{
+    	list-style-position: inside;
+    }
+
     .dark_serif_font > li{
     	list-style: initial;
     	list-style-position: inside;
