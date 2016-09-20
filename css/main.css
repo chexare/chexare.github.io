@@ -1752,6 +1752,12 @@
 	    padding: 35px;
 	    color: #fff;
     }
+    .light_font_centered{
+    	color:#fff;
+    	text-align: center;
+    	font-family: calluna;
+    	font-weight: 100;
+    }
     .dark_font{
     	color:#888;
     	text-align: left;
