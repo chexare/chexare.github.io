@@ -1783,7 +1783,9 @@
     	padding: 85px 15px 90px;
     	border-bottom: 1px solid #eee;
     }
-
+    .big_space_hr{
+    	margin:50px 0px;
+    }
 /* Form */
 
 	input[type="text"],
