@@ -1767,6 +1767,9 @@
     	list-style: initial;
     	list-style-position: inside;
     }
+    .dark_serif_font > i{
+    	font: italic;
+    }
     .dark_font_centered{
     	color:#888;
     	text-align: center;
