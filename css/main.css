@@ -1757,6 +1757,12 @@
     	font-family: calluna;
     	font-weight: 100;
     }
+    .light_font_centered h2{
+    	color:#fff;
+    	text-align: center;
+    	font-family: calluna;
+    	font-weight: 100;
+    }
     .dark_font{
     	color:#888;
     	text-align: left;
