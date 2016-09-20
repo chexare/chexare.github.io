@@ -1768,7 +1768,7 @@
     	list-style-position: inside;
     }
     .dark_serif_font > i{
-    	font: italic;
+    	font-style: italic;
     }
     .dark_font_centered{
     	color:#888;
