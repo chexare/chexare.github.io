@@ -2513,8 +2513,8 @@
 		text-align: left;
 	}
 	.bio_pic{
-		max-width: 350px;
-
+		float: left;
+    	padding: 4px 50px 30px 0px;
 	}
 
 		#banner .inner {
