@@ -1722,7 +1722,7 @@
 	}
 	#logo a {
 		border: solid 1px transparent;
-		color: #c7cac9;
+		color: #fff;
 		display: inline-block;
 		line-height: 1em;
 		padding: 6px;
@@ -2622,8 +2622,10 @@
 
 	#footer {
 		background: #212f2e;
-		color: #c7cac9;
-		padding: 3em ;
+		color: #fff;
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
 		text-align: center;
 	}
 
