@@ -1604,14 +1604,14 @@
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
-		font-family: calluna;
+		font-family: helvetica;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: #c7cac9;
 			text-decoration: none;
 			border: 0;
-			font-family: calluna;
+			font-family: helvetica;
 		}
 
 	h2 {
@@ -1747,20 +1747,20 @@
     	padding: 65px 0px 0px 0px;
     }
     .home_splash_message{
-	    background: rgba(0,0,0,0.7);
+	    background: rgba(0,0,0,0.5);
 	    padding: 35px;
 	    color: #fff;
     }
     .light_font_centered{
     	color:#fff;
     	text-align: center;
-    	font-family: calluna;
+    	font-family: helvetica;
     	font-weight: 100;
     }
     .light_font_centered h2{
     	color:#fff;
     	text-align: center;
-    	font-family: calluna;
+    	font-family: helvetica;
     	font-weight: 100;
     }
     .dark_font{
@@ -1771,7 +1771,7 @@
     .dark_serif_font{
     	color:#888;
     	text-align: left;
-    	font-family: calluna;
+    	font-family: helvetica;
     	font-weight: 100;
     }
     .dark_serif_font ol{
@@ -2283,7 +2283,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
-		font-family: calluna;
+		font-family: helvetica;
 	}
 
 		#header h1 {	
@@ -2623,7 +2623,7 @@
 	#footer {
 		background: #212f2e;
 		color: #c7cac9;
-		padding: 5em ;
+		padding: 3em ;
 		text-align: center;
 	}
 
