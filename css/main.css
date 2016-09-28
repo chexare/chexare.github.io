@@ -1779,7 +1779,7 @@
     }
 
     .dark_serif_font > li{
-    	list-style: initial;
+    	list-style: none;
     	list-style-position: inside;
     }
     .dark_serif_font > i{
