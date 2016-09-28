@@ -1769,7 +1769,7 @@
     	font-weight: 100;
     }
     .dark_serif_font{
-    	color:#888;
+    	color:#333;
     	text-align: left;
     	font-family: helvetica;
     	font-weight: 100;
@@ -1786,7 +1786,7 @@
     	font-style: italic;
     }
     .dark_font_centered{
-    	color:#888;
+    	color:#333;
     	text-align: center;
     	font-weight: 100;
     }
