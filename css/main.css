@@ -1793,6 +1793,9 @@
     }
     .dark_background_cell{
     	background:#efefef;
+    	border: 1px solid #fff;
+    	padding: 6px;
+    	font-weight: bold;
     }
     .advisor{
     	padding: 45px 15px 20px;
