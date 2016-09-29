@@ -1720,6 +1720,7 @@
 	.main_logo{
 		background-repeat: no-repeat;
     	background: url("/images/main_logo.png")center;
+    	height:86px;
 	}
 	#logo{
 	    margin: 7px;
