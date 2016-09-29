@@ -1717,6 +1717,10 @@
 	}
 
 /* CUSTOM CSS CG */
+	.main_logo{
+		background-repeat: no-repeat;
+    	background: url("/images/main_logo.png")center;
+	}
 	#logo{
 	    margin: 7px;
 	}
