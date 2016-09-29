@@ -1718,8 +1718,8 @@
 
 /* CUSTOM CSS CG */
 	.main_logo{
-		background-repeat: no-repeat;
-    	background: url("/images/main_logo.png")center;
+		background-size: contain;
+    	background: url("/images/main_logo.png")center no-repeat;
     	height:86px;
 	}
 	#logo{
