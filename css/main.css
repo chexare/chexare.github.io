@@ -1778,7 +1778,11 @@
     .dark_serif_font ol{
     	list-style-position: inside;
     }
-
+    .bull{
+    	background-size: cover;
+    	background: url("images/bull.jpg");
+    	height:300px;
+    }
     .dark_serif_font > li{
     	list-style: none;
     	list-style-position: inside;
