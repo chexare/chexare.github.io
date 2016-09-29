@@ -1769,6 +1769,12 @@
     	font-family: helvetica;
     	font-weight: 100;
     }
+    .dark_serif_font_right{
+    	color:#333;
+    	text-align: right;
+    	font-family: helvetica;
+    	font-weight: 100;
+    }
     .dark_serif_font ol{
     	list-style-position: inside;
     }
@@ -1785,9 +1791,8 @@
     	text-align: center;
     	font-weight: 100;
     }
-    .dark_background{
+    .dark_background_cell{
     	background:#efefef;
-    	display:inline-block;
     }
     .advisor{
     	padding: 45px 15px 20px;
