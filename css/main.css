@@ -1718,9 +1718,10 @@
 
 /* CUSTOM CSS CG */
 	.main_logo{
-		background-size: contain;
-    	background: url("/images/main_logo.png")center no-repeat;
-    	height:86px;
+	    background: url("/images/main_logo.png")center no-repeat;
+	    height: 60px;
+	    background-size: contain;
+	    margin: 0px 0px 25px 0px;
 	}
 	#logo{
 	    margin: 7px;
