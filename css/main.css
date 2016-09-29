@@ -1780,7 +1780,7 @@
     }
     .bull{
     	background-size: cover;
-    	background: url("images/bull.jpg");
+    	background: url("/images/bull.jpg");
     	height:300px;
     }
     .dark_serif_font > li{
