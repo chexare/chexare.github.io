@@ -2532,7 +2532,7 @@
 	.bio_pic{
 		float: left;
 	    margin: 4px 50px 30px 0px;
-	    max-width: 280px;
+	    max-width: 325px;
 	    border: 1px solid #efefef;
 	}
 
@@ -2954,9 +2954,6 @@
 
 		/* Footer */
 
-			#footer {
-				padding: 4em 1.5em;
-			}
 
 		/* Off-Canvas Navigation */
 
@@ -2992,7 +2989,8 @@
 
 				#navButton .toggle {
 					text-decoration: none;
-					height: 60px;
+					height: 51px;
+					background: #212f2e;
 					left: 0;
 					position: absolute;
 					text-align: center;
@@ -3070,8 +3068,8 @@
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					color: inherit;
 					display: block;
-					height: 3em;
-					line-height: 3em;
+					height: 5em;
+					line-height: 5em;
 					opacity: 0.75;
 					text-decoration: none;
 				}
@@ -3305,9 +3303,6 @@
 
 		/* Footer */
 
-			#footer {
-				padding: 3em 1.5em;
-			}
 
 				#footer .copyright li {
 					display: block;
