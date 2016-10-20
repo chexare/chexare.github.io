@@ -1785,7 +1785,7 @@
     	list-style-position: inside;
     }
     .bull{
-    	background: url("/images/bull.jpg")no-repeat center center fixed; 
+    	background: url("/images/bull.jpg")no-repeat center center; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
