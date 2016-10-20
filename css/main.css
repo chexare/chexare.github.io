@@ -2969,6 +2969,10 @@
 			.profile_pic{
 				display: none;
 			}
+			.advisor_name{
+				font-size:20px;
+				font-weight: bold;
+			}
 			.bio_pic{
 				margin: 15px auto 30px;
 				display: block;
