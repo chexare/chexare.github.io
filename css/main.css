@@ -2964,6 +2964,9 @@
 				border: 1px solid #efefef;
 				float: none;
 			}
+			.dark_background_cell{
+				height: 56px;
+			}
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
