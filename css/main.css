@@ -2960,6 +2960,9 @@
 
 
 		/* Off-Canvas Navigation */
+			.profile_pic{
+				display: none;
+			}
 			.bio_pic{
 				margin: 15px auto 30px;
 				display: block;
