@@ -2957,7 +2957,10 @@
 
 
 		/* Off-Canvas Navigation */
-
+			.container{
+			    padding-left: 0px;
+    			padding-right: 0px;
+			}
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
