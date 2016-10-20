@@ -1793,7 +1793,10 @@
     	height:250px;
     }
     .profile_pic{
-				display: none;
+		display: none;
+	}
+	.only_side_visible{
+		display: none;
 	}
     .dark_serif_font > li{
     	list-style: none;
