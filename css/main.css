@@ -1796,7 +1796,7 @@
 		display: none;
 	}
 	.only_side_visible{
-		display: none;
+		display: none !important;
 	}
     .dark_serif_font > li{
     	list-style: none;
