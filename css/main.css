@@ -2989,6 +2989,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
+				background: #212f2e;
 				height: 60px;
 				left: 0;
 				position: fixed;
@@ -2999,8 +3000,6 @@
 
 				#navButton .toggle {
 					text-decoration: none;
-					height: 51px;
-					background: #212f2e;
 					left: 0;
 					position: absolute;
 					text-align: center;
