@@ -2965,7 +2965,7 @@
 				float: none;
 			}
 			.dark_background_cell{
-				height: 56px;
+				font-size: 10px;
 			}
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
