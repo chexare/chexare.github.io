@@ -2962,6 +2962,7 @@
 				display: block;
 				max-width: 226px;
 				border: 1px solid #efefef;
+				float: none;
 			}
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
