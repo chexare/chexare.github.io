@@ -1785,8 +1785,11 @@
     	list-style-position: inside;
     }
     .bull{
-    	background-size: cover;
-    	background: url("/images/bull.jpg")center;
+    	background: url("/images/bull.jpg")no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
     	height:250px;
     }
     .dark_serif_font > li{
