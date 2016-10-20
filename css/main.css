@@ -2957,7 +2957,12 @@
 
 
 		/* Off-Canvas Navigation */
-
+			.bio_pic{
+				margin: 10px auto;
+				display: block;
+				max-width: 226px;
+				border: 1px solid #efefef;
+			}
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
