@@ -917,7 +917,8 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: #18bc9c;
+  text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
@@ -1034,6 +1035,7 @@ h2,
 .h2,
 h3,
 .h3 {
+  margin-top: 21px;
   margin-bottom: 10.5px;
 }
 h1 small,
@@ -3952,7 +3954,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    
+    margin-left: -15px;
   }
 }
 .navbar-toggle {
@@ -4024,7 +4026,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 17.5px;
+    padding-top: 19.5px;
     padding-bottom: 19.5px;
   }
 }
@@ -4171,7 +4173,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #58595b;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
