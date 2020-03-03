@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			var x = document.getElementById("demo");
+			function getLocation() {
+			if (navigator.geolocation) {
+			    navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+			    x.innerHTML = "Geolocation is not supported by this browser.";
+			}
+			}
+			function showPosition(position) {
+			x.innerHTML = "Latitude: " + position.coords.latitude + 
+			"<br>Longitude: " + position.coords.longitude; 
+			}
+			getLocation();
+			$(".img-responsive").click(function(){
+				navigator.geolocation.getCurrentPosition(function(position) {
+				  window.location = "http://www.pokevision.com/#/@"+ position.coords.latitude +","+ position.coords.longitude;
+				});
+			});
+			
+		});
+
+	</script>
+	</head>
+	<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10">
+                    <img class="img-responsive" src="pika.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="demo" class="container"></div>
+    </header>    
+
+
+	</body>
+</html>
+
+
