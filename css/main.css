@@ -1,0 +1,78 @@
+body{
+	padding-top: 0px;
+	font-family: "Open Sans";
+}
+p{
+	font-size: 14px;
+}
+
+.navbar{
+	background: red;
+	display: none;
+}
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.left_container{
+	z-index: 10;
+	-webkit-box-shadow: 10px 0 8px -8px rgba(0,0,0,0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    10px 0 8px -8px rgba(0,0,0,0.3);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         10px 0 8px -8px rgba(0,0,0,0.3);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.right_container{
+	background: #f7f7f7;
+	padding-right: 0px;
+    padding-left: 0px;
+}
+.bio_block{
+	margin-bottom: 24px;
+}
+.memo_container{
+	padding: 0 24px;
+}
+.memo_header{
+	padding: 12px 24px;
+	min-height: 64px;
+	background: rgb(0,160,185);
+	background: linear-gradient(90deg, rgba(0,160,185,1) 0%, rgba(0,116,134,1) 100%); 
+	width: 100%;
+}
+.memo_pill{
+	display: inline-table;
+	padding: 12px 0px 12px 0px ;
+    min-height: 78px;
+    border-bottom: 2px solid #087486;
+    width: 100%;
+    transition: 0.2s;
+}
+.memo_pill:hover{
+	background: #ececec;
+}
+.subscribe_link{
+	text-decoration: underline; 
+	display: block;
+	float: right;
+	text-align: right;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 800;
+	line-height: 40px;
+	transition: 0.2s;
+}
+.subscribe_link:hover {
+	color:#00DCFF;
+}
+
+
+@media (max-width: 900px){
+
+	.navbar{
+		display: block;
+	}
+	body{
+		padding-top: 20px;
+	}
+
+
+}
