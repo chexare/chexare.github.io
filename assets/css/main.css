@@ -1336,6 +1336,7 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			padding: 19px 0px;
 		}
 
 			#header .logo .icon:before {
@@ -1459,6 +1460,14 @@ input, select, textarea {
 				opacity: 0;
 			}
 
+		@media screen and (max-width: 1680px) {
+
+			#header .logo {
+				padding: 14px 0px;
+			}
+
+		}
+		
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
@@ -1482,6 +1491,7 @@ input, select, textarea {
 				width: 4.75rem;
 				height: 4.75rem;
 				line-height: 4.75rem;
+				padding: 11px 0px;
 			}
 
 				#header .logo .icon:before {
