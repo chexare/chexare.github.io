@@ -64,7 +64,9 @@
 				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 
 			}
-
+			$.fn.hasScrollBar = function() {
+		        return this.get(0).scrollHeight > this.height();
+		    }
 	// Main.
 		var	delay = 325,
 			locked = false;
