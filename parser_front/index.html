@@ -16,7 +16,10 @@
 			             url: "https://healthfirstparser.herokuapp.com/file/v1/files",
 			             success: function(data){ 
 			             	alert(data);
-			             	$(".data_container").append("<div> data </div>");			                
+
+			             	for (let i = 0; i < data.length; i++) {
+							  $('#data_container').append('<div>'+ data[i].name + data[i].id + data[i].type'</div>');
+							} 		                
 			             }
 			         });
 			      });
