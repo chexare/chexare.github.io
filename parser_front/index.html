@@ -7,13 +7,23 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	    <script type="text/javascript">  
 	    	$(document).ready( function(){
-			    $('#test_text').animate({'top': 100, 'left': 100});
+			    $('#test_text').animate({'opacity': 1, 'top': 100, 'left': 100}, 800);
+			     $('#test_text').click(function(){ 
+			        alert('ajax');
+			         $.ajax({ 
+			             type: "GET",
+			             dataType: "json",
+			             url: "https://healthfirstparser.herokuapp.com/file/v1/files",
+			             success: function(data){        
+			                alert(data);
+			             }
+			         });
 			});
 	    </script> 
 	</head>
 	<body>
 		
-			<div id="test_text" style="font-size: 24px;color:#333;padding: 16px;">This is a test</div>
+			<div id="test_text" style="font-size: 24px;color:#333;padding: 16px;position: relative;opacity: 0;">This is a test</div>
 
 	</body>
 </html>
