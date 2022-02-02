@@ -68,6 +68,10 @@ input, select, textarea {
 
 /*// Cesar Styles //*/
 
+.icon{
+	margin-right: 4px;
+}
+
 .wrapper{
 	position: relative;
 	margin: auto;
@@ -142,12 +146,13 @@ input, select, textarea {
 	line-height: 24px;
 	border: 1px solid #333333;
 	border-radius: 4px;
+	color: #333333;
 	background: #ffffff;
 	transition: 0.2s;
 }
 
 .controls button:hover {
-	background: #c4c4c4;
+	background: #f2f2f2;
 	cursor: pointer;
 }
 
