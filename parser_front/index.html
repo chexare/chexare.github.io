@@ -18,7 +18,7 @@
 						url: "https://healthfirstparser.herokuapp.com/file/v1/files",
 						success: function(data){ 
 							for (let i = 0; i < data.length; i++) {
-								$('#file_list').append('<li><div class="data_content">'+ data[i].name + '</div><div class="data_content file_id">' + data[i].id + '</div><div class="delete_data"><i class="fas fa-trash"></i></div></li>');
+								$('#file_list').append('<li><div class="data_content">'+ data[i].name + '</div><div class="data_content file_id">' + data[i].id + '</div><div class="delete_data"><i class="fas fa-trash"></i></div><div class="download_data"><a href="https://healthfirstparser.herokuapp.com/file/v1/download/'+ data[i].id +'"><i class="fas fa-cogs"></i></a></div></li>');
 							} 		                
 						}
 					});				
@@ -46,23 +46,20 @@
 			           alert("Please select a file.");
 
 			        }
-			    });
-
-				
+			    });		
 
 				$("#file_list").on( "click", ".delete_data" ,function(event) {
 					event.preventDefault();
 					var id = $(event.target).parent().siblings(".file_id").text();
 					$.ajax({ 
-					type: "DELETE",
-					url: "https://healthfirstparser.herokuapp.com/file/v1/"+id ,
-					success: function(){ 
-						populate_list();
-						alert("File has been deleted!");	                
-					}
+						type: "DELETE",
+						url: "https://healthfirstparser.herokuapp.com/file/v1/"+id ,
+						success: function(){ 
+							populate_list();
+							alert("File has been deleted!");	                
+						}
+					});
 				});
-				});
-
 
 				$("#upload_button").click(function(){
 					$(".modal_container").fadeIn("fast");

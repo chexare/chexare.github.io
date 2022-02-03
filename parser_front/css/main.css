@@ -14,7 +14,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	text-decoration: none;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -174,16 +176,21 @@ input, select, textarea {
 	white-space: nowrap;
 }
 
-.delete_data{
+.delete_data, .download_data{
 	color: rgba(51, 51, 51, 0.3);
 	position: relative;
 	display: initial;
 	float: right;
 	transition: 0.2s;
+	padding: 0 0 0 16px;
+}
+.download_data a {
+	color: rgba(51, 51, 51, 0.3) !important;
+	transition: 0.2s;
 }
 
-.delete_data:hover{
-	color: rgba(51, 51, 51, 1);
+.delete_data:hover, .download_data:hover, .download_data a:hover{
+	color: rgba(51, 51, 51, 1) !important;
 	cursor: pointer;
 }
 
