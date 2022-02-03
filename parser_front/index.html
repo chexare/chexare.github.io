@@ -10,16 +10,20 @@
 		<script src="https://kit.fontawesome.com/05341348cf.js" crossorigin="anonymous"></script>
 	    <script type="text/javascript">  
 	    	$(document).ready( function(){
-				$.ajax({ 
-					type: "GET",
-					dataType: "json",
-					url: "https://healthfirstparser.herokuapp.com/file/v1/files",
-					success: function(data){ 
-						for (let i = 0; i < data.length; i++) {
-							$('#file_list').append('<li><div class="data_content">'+ data[i].name + '</div><div class="data_content">' + data[i].id + '</div><div class="delete_data"><i class="fas fa-trash"></i></div></li>');
-						} 		                
-					}
-				});
+	    		function populate_list() {
+	    			$('#file_list').empty();
+    				$.ajax({ 
+						type: "GET",
+						dataType: "json",
+						url: "https://healthfirstparser.herokuapp.com/file/v1/files",
+						success: function(data){ 
+							for (let i = 0; i < data.length; i++) {
+								$('#file_list').append('<li><div class="data_content">'+ data[i].name + '</div><div class="data_content file_id">' + data[i].id + '</div><div class="delete_data"><i class="fas fa-trash"></i></div></li>');
+							} 		                
+						}
+					});				
+				}
+				populate_list();
 				$("#but_upload").click(function(){
 			        var fd = new FormData();
 			        var files = $('#file')[0].files;			        
@@ -32,6 +36,7 @@
 			              contentType: false,
 			              processData: false
 			           }).then(function(){
+			           		populate_list();
 			                alert("File uploaded succesfully!");
 			                $(".modal_container").fadeOut("fast");
 							$(".upload_modal").fadeOut("fast");
@@ -45,8 +50,17 @@
 
 				
 
-				$(".delete_data").click(function(e){
-					alert("something");
+				$("#file_list").on( "click", ".delete_data" ,function(event) {
+					event.preventDefault();
+					var id = $(event.target).parent().siblings(".file_id").text();
+					$.ajax({ 
+					type: "DELETE",
+					url: "https://healthfirstparser.herokuapp.com/file/v1/"+id ,
+					success: function(){ 
+						populate_list();
+						alert("File has been deleted!");	                
+					}
+				});
 				});
 
 

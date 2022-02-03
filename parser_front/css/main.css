@@ -164,10 +164,14 @@ input, select, textarea {
 }
 
 .data_content{
-	padding: 0 8px 0 0;
+	padding: 0 16px 0 0;
 	color: #333333;
 	position: relative;
-	display: initial;
+	display: inline-block;
+	text-overflow: ellipsis;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .delete_data{
