@@ -16,15 +16,64 @@
 					url: "https://healthfirstparser.herokuapp.com/file/v1/files",
 					success: function(data){ 
 						for (let i = 0; i < data.length; i++) {
-							$('#file_list').append('<li>'+ data[i].name + data[i].id + data[i].type +'</li>');
+							$('#file_list').append('<li><div class="data_content">'+ data[i].name + '</div><div class="data_content">' + data[i].id + '</div><div class="delete_data"><i class="fas fa-trash"></i></div></li>');
 						} 		                
 					}
+				});
+				$("#but_upload").click(function(){
+			        var fd = new FormData();
+			        var files = $('#file')[0].files;			        
+			        if(files.length > 0 ){
+			           fd.append('file',files[0]);
+			           $.ajax({
+			              url: 'https://healthfirstparser.herokuapp.com/file/v1/upload',
+			              type: 'post',
+			              data: fd,
+			              contentType: false,
+			              processData: false
+			           }).then(function(){
+			                alert("File uploaded succesfully!");
+			                $(".modal_container").fadeOut("fast");
+							$(".upload_modal").fadeOut("fast");
+							$("#upload_form")[0].reset();
+			              });
+			        }else{
+			           alert("Please select a file.");
+
+			        }
+			    });
+
+				
+
+				$(".delete_data").click(function(e){
+					alert("something");
+				});
+
+
+				$("#upload_button").click(function(){
+					$(".modal_container").fadeIn("fast");
+					$(".upload_modal").fadeIn("fast");
+				});
+				$(".close_modal").click(function(){
+					$(".modal_container").fadeOut("fast");
+					$(".upload_modal").fadeOut("fast");
 				});
 			});
 	    </script> 
 	</head>
 	<body>
-		
+		<div class="modal_container">
+			<div class="upload_modal plain_container">
+				<div class="title_controls_container">
+					<div class="title">Select a file to upload</div>					
+					<div class="controls"><div class="naked_button close_modal"><i class="fas fa-times icon"></i></div></div>
+				</div>
+				<form class="upload_form" method="POST" enctype="multipart/form-data" action="" id="upload_form">
+					<div style="position: relative;width: 100%;display: flex;padding: 0 0 10px 0;"><input type="file" name="file" id="file" /></div>
+					<div style="position: relative;width: 100%;display: flex;padding: 0 0 10px 0;"><input class="outlined_button" type="button" value="Upload" id="but_upload"/></div>
+				</form>
+			</div>
+		</div>
 			<div class="wrapper">
 				<div class="main_header">
 					<div class="main_logo"><img src="images/doc_parser_logo.png"></div>
@@ -33,11 +82,14 @@
 					<div class="plain_container">
 						<div class="title_controls_container">
 							<div class="title">My files:</div>
-							<div class="controls"><button id="upload_button"><i class="fas fa-upload icon"></i>Upload a new file</button></div>
+							<div class="controls">
+								<button id="upload_button" class="outlined_button"><i class="fas fa-upload icon"></i>Upload a new file</button>
+							</div>
+
 						</div>
 						<div class="list_container">
 							<ul id="file_list"></ul>
-						</div>
+						</div>						
 					</div>
 				</div>
 			</div>
